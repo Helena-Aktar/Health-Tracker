@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.EntryController">
+   <children>
+      <Label layoutX="43.0" layoutY="51.0" prefHeight="31.0" prefWidth="79.0" text="Date">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="198.0" prefHeight="28.0" prefWidth="470.0" text="What is your latest systolic blood pressure reading? (mmHg)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="271.0" prefHeight="28.0" prefWidth="470.0" text="What is your latest diastolic blood pressure reading? (mmHg)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sysField" alignment="CENTER_RIGHT" layoutX="160.0" layoutY="229.0" prefHeight="28.0" prefWidth="144.0" />
+      <TextField fx:id="diaField" alignment="CENTER_RIGHT" layoutX="164.0" layoutY="307.0" prefHeight="28.0" prefWidth="144.0" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="167.0" prefHeight="31.0" prefWidth="152.0" text="Blood Pressure">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="369.0" prefHeight="31.0" prefWidth="152.0" text="Weight (kg)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="weightField" alignment="CENTER_RIGHT" layoutX="160.0" layoutY="369.0" prefHeight="31.0" prefWidth="152.0" />
+      <Label alignment="CENTER" layoutX="133.0" layoutY="-1.0" prefHeight="31.0" prefWidth="198.0" text="New Entry" textFill="#541261">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="357.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleSaveAction" prefHeight="31.0" prefWidth="63.0" text="Save" textFill="#2128ad" />
+      <Button layoutX="437.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleCancelAction" prefHeight="31.0" prefWidth="63.0" text="Cancel" textFill="#942828" />
+      <Button layoutX="13.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="30.0" prefWidth="60.0" text="Home" textFill="#222557">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="timeField" layoutX="145.0" layoutY="98.0" prefHeight="30.0" prefWidth="179.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="datepicker" layoutX="143.0" layoutY="51.0" prefHeight="31.0" prefWidth="179.0" showWeekNumbers="true" />
+      <Label layoutX="32.0" layoutY="98.0" prefHeight="31.0" prefWidth="102.0" text="Time (HH:MM)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="312.0" layoutY="229.0" prefHeight="28.0" prefWidth="79.0" text="mmHg" />
+      <Label layoutX="318.0" layoutY="307.0" prefHeight="28.0" prefWidth="79.0" text="mmHg" />
+      <Label layoutX="322.0" layoutY="371.0" prefHeight="28.0" prefWidth="31.0" text="kg" />
+      <Label alignment="CENTER" layoutX="331.0" layoutY="99.0" prefHeight="28.0" prefWidth="162.0" text="Enter HH:MM in text format" />
+   </children>
+</AnchorPane>
